@@ -7,8 +7,6 @@ from django.urls import reverse_lazy
 from django.shortcuts import render
 from .models import Page
 from .forms import PageForm
-from django.db.models import Q
-
 
 class StaffRequiredMixin(object):
     """

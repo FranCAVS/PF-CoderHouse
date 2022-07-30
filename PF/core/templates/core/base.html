@@ -18,6 +18,10 @@
               </li>    
             </ul>
             <ul class="navbar-nav">
+              <form action="{% url 'pages:search' %}" method="GET">
+                <input type="text" name="title">
+                <input type="submit" value="Buscar">
+              </form>
               {% if not request.user.is_authenticated %}
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'login' %}">Acceder</a>

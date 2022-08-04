@@ -56,3 +56,6 @@ def buscar(request):
     else:
         base = 'page_error_not_find.html'
     return render(request, base, {})
+
+def about(request):
+    return render(request, 'page_about.html')

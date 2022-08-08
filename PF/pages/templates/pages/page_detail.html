@@ -53,7 +53,7 @@
         <h2 class="section-heading mb-4">{{object.title}}</h2>
         <div>
           {{page.content|safe}}
-          {% if request.user.is_active %}
+          {% if user.id == page.owner.id %}
             <p><a href="{% url 'pages:update' page.id %}">Editar</a></p>
           {% endif %}
         </div>

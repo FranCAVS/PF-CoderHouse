@@ -5,6 +5,7 @@
   <body>
     <body>
       <!-- Navegación -->
+      {% block Navegacion %}
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="{% url 'home' %}">CHWeBlog</a>
@@ -21,10 +22,7 @@
               </li>       
             </ul>
             <ul class="navbar-nav">
-              <form action="{% url 'pages:search' %}" method="GET">
-                <input type="text" name="title">
-                <input type="submit" value="Buscar">
-              </form>
+              <!--Aca iba la barra de busqueda-->
               {% if not request.user.is_authenticated %}
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'login' %}">Acceder</a>
@@ -44,6 +42,8 @@
           </div>
         </div>
       </nav>
+      {% endblock Navegacion %}
       <!-- Contenido -->
-      {% block content %}{% endblock %}
+      {% block content %}
+      {% endblock %}
   </body>

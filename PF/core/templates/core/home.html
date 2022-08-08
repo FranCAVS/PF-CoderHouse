@@ -8,4 +8,15 @@
     <p class="lead">PROYECTO FINAL</p>
   </div>
 </div>
+<div class="container">
+  <div class="row">
+      <div style="padding-top:50px; text-align:center;">
+        <form action="{% url 'pages:search' %}" method="GET">
+          <input type="text" placeholder="Buscar Blogs" name="title" size="100">
+          <input type="submit" value="Buscar">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

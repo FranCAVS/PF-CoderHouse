@@ -7,33 +7,38 @@ from django.urls import reverse_lazy
 from django.shortcuts import render
 from .models import Page
 from .forms import PageForm
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.contrib.auth.decorators import login_required
+
 
 class StaffRequiredMixin(object):
-    """
-    Este mixin requerirá que el usuario sea miembro del staff
-    """
-    @method_decorator(staff_member_required)
-    def dispatch(self, request, *args, **kwargs):
-        return super(StaffRequiredMixin, self).dispatch(request, *args, **kwargs)
+    """ Este mixin requerirá que el usuario sea miembro del staff """
+@method_decorator(staff_member_required)
+def dispatch(self, request, *args, **kwargs):
+     return super(StaffRequiredMixin, self).dispatch(request, *args, **kwargs)
+
+
+@login_required
+def dummy(request):
+    render(request, "")
+
 
 # Create your views here.
 class PageListView(ListView):
     model = Page
-    
+
 
 class PageDetailView(DetailView):
     model = Page
 
 
-@method_decorator(staff_member_required, name='dispatch')
-class PageCreate(CreateView):
+class PageCreate(LoginRequiredMixin, CreateView):
     model = Page
     form_class = PageForm
     success_url = reverse_lazy('pages:pages')
 
 
-@method_decorator(staff_member_required, name='dispatch')
-class PageUpdate(UpdateView):
+class PageUpdate(LoginRequiredMixin, UpdateView):
     model = Page
     form_class = PageForm
     template_name_suffix = '_update_form'
@@ -43,9 +48,10 @@ class PageUpdate(UpdateView):
 
 
 @method_decorator(staff_member_required, name='dispatch')
-class PageDelete(DeleteView):
+class PageDelete(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
     model = Page
     success_url = reverse_lazy('pages:pages')
+    permission_required = ("pages.delete_Page")
 
 
 def buscar(request):

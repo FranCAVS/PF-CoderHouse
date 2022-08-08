@@ -7,6 +7,7 @@ from django.urls import reverse_lazy
 from django import forms
 from .models import Profile
 
+
 # Create your views here.
 class SignUpView(CreateView):
     form_class = UserCreationFormWithEmail
@@ -56,3 +57,4 @@ class EmailUpdate(UpdateView):
         form.fields['email'].widget = forms.EmailInput(
             attrs={'class':'form-control mb-2', 'placeholder':'Email'})
         return form
+

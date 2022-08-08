@@ -9,7 +9,7 @@ Este proyecto final esta hecho para crear un sistema de administración de blogs
 
 # Instalación
 
-Para instalar este software es necesario hacerlo:
+Para el funcionamiento correcto de este proyecto:
 
 ## Verificar tu versión de python
 

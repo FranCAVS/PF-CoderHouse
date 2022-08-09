@@ -1,3 +1,6 @@
+# Indicaciones
+La versión que esta aca en main en la versión final, y la que esta en master en la versión que tiene todos los commits hechos por los participantes del grupo.
+
 # PF-CoderHouse
 Proyecto Final del curso de Python x CoderHouse // Pagina Web-Blog
 

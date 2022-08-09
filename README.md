@@ -1,3 +1,6 @@
+#Indicaciones
+Esta versión fue la que usamos de para subir los commits de los integrantes del grupo
+
 # PF-CoderHouse
 Proyecto Final del curso de Python x CoderHouse // Pagina Web-Blog
 

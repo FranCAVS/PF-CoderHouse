@@ -1,6 +1,9 @@
 # Indicaciones
 La versión que esta aca en main en la versión final, y la que esta en master en la versión que tiene todos los commits hechos por los participantes del grupo.
 
+# Link en YouTube de previsualizacion de la pagina:
+https://www.youtube.com/watch?v=uN6G7pgGwCQ&ab_channel=FrancescoVaccaro
+
 # PF-CoderHouse
 Proyecto Final del curso de Python x CoderHouse // Pagina Web-Blog
 
@@ -74,6 +77,3 @@ para tener acceso a la aplicación.
 
 Si todo va bien deberías poder abrir el navegador y ver la aplicación funcionando correctamente.
 
-### Video revicion WEB:(link youtube)
-
-https://www.youtube.com/watch?v=uN6G7pgGwCQ&ab_channel=FrancescoVaccaro

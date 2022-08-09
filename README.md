@@ -73,3 +73,7 @@ En tu terminal correspondiente te va a aparecer la IP para poder acceder. O en t
 para tener acceso a la aplicación.
 
 Si todo va bien deberías poder abrir el navegador y ver la aplicación funcionando correctamente.
+
+### Video revicion WEB:(link youtube)
+
+https://www.youtube.com/watch?v=uN6G7pgGwCQ&ab_channel=FrancescoVaccaro

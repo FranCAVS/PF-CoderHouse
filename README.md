@@ -77,3 +77,5 @@ para tener acceso a la aplicación.
 
 Si todo va bien deberías poder abrir el navegador y ver la aplicación funcionando correctamente.
 
+### Link Planilla Google de Tabla de Pruebas Unitarias
+https://docs.google.com/spreadsheets/d/1zE_kGb4OuqE3liJg7P82WVGDzq3ojhACvHJVoLqiDak/edit?usp=sharing

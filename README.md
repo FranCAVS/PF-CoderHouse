@@ -1,6 +1,9 @@
 #Indicaciones
 Esta versión fue la que usamos de para subir los commits de los integrantes del grupo
 
+# Link en YouTube de previsualizacion de la pagina:
+https://www.youtube.com/watch?v=uN6G7pgGwCQ&ab_channel=FrancescoVaccaro
+
 # PF-CoderHouse
 Proyecto Final del curso de Python x CoderHouse // Pagina Web-Blog
 
@@ -73,3 +76,7 @@ En tu terminal correspondiente te va a aparecer la IP para poder acceder. O en t
 para tener acceso a la aplicación.
 
 Si todo va bien deberías poder abrir el navegador y ver la aplicación funcionando correctamente.
+
+### Link Planilla Google de Tabla de Pruebas Unitarias
+https://docs.google.com/spreadsheets/d/1zE_kGb4OuqE3liJg7P82WVGDzq3ojhACvHJVoLqiDak/edit?usp=sharing
+
